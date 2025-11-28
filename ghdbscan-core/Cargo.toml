@@ -1,0 +1,18 @@
+[package]
+name = "ghdbscan-core"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+ndarray.workspace = true
+rayon.workspace = true
+ordered-float.workspace = true
+kiddo = "4.2"
+thiserror = "1.0"
+
+[dev-dependencies]
+approx = "0.5"
+rand = "0.8"

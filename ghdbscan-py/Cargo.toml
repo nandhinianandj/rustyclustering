@@ -1,0 +1,16 @@
+[package]
+name = "ghdbscan-py"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[lib]
+name = "ghdbscan"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.22", features = ["extension-module"] }
+numpy = "0.22"
+ndarray.workspace = true
+ghdbscan-core = { path = "../ghdbscan-core" }
