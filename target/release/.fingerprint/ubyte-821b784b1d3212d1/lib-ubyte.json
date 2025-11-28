@@ -1,0 +1,1 @@
+{"rustc":4826714390000139368,"features":"[\"default\"]","declared_features":"[\"default\", \"serde\"]","target":8843193852566609920,"profile":2040997289075261528,"path":5363091895824542796,"deps":[],"local":[{"CheckDepInfo":{"dep_info":"release/.fingerprint/ubyte-821b784b1d3212d1/dep-lib-ubyte","checksum":false}}],"rustflags":[],"config":2069994364910194474,"compile_kind":0}

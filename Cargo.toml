@@ -1,5 +1,5 @@
 [workspace]
-members = ["ghdbscan-core", "ghdbscan-py"]
+members = ["ghdbscan-core", "ghdbscan-py", "ghdbscan-gpu", "ghdbscan-vae"]
 resolver = "2"
 
 [workspace.package]

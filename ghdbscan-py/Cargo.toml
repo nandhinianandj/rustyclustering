@@ -13,4 +13,7 @@ crate-type = ["cdylib"]
 pyo3 = { version = "0.22", features = ["extension-module"] }
 numpy = "0.22"
 ndarray.workspace = true
-ghdbscan-core = { path = "../ghdbscan-core" }
+ghdbscan-core = { path = "../ghdbscan-core" } # GPU support
+ghdbscan-gpu = { path = "../ghdbscan-gpu" }
+ghdbscan-vae = { path = "../ghdbscan-vae" }
+pollster = "0.3"

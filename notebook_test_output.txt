@@ -1,0 +1,47 @@
+
+======================================================================
+JUPYTER NOTEBOOK AUTOMATED TEST SUITE
+======================================================================
+Notebook directory: /home/roci/playspace/ghdbscan/notebooks
+Start time: 2025-11-28 07:46:10
+
+Found 2 notebook(s) to test:
+  - dbscan_demo.ipynb
+  - hdbscan_demo.ipynb
+
+======================================================================
+Executing: dbscan_demo.ipynb
+======================================================================
+✅ SUCCESS: Executed 8 cells in 4.07s
+   Output saved to: /home/roci/playspace/ghdbscan/notebooks/dbscan_demo_executed.ipynb
+
+======================================================================
+Executing: hdbscan_demo.ipynb
+======================================================================
+❌ FAILED: Execution failed after 605.28s
+   Error: [NbConvertApp] Converting notebook /home/roci/playspace/ghdbscan/notebooks/hdbscan_demo.ipynb to notebook
+[NbConvertApp] ERROR | Timeout waiting for execute reply (600s).
+Traceback (most recent call l
+
+======================================================================
+TEST SUMMARY
+======================================================================
+
+Total notebooks: 2
+Passed: 1 ✅
+Failed: 1 ❌
+Total execution time: 609.35s
+Total cells executed: 8
+
+❌ FAILED NOTEBOOKS:
+
+  hdbscan_demo.ipynb:
+    Error: [NbConvertApp] Converting notebook /home/roci/playspace/ghdbscan/notebooks/hdbscan_demo.ipynb to notebook
+[NbConvertApp] ERROR | Timeout waiting for execute reply (600s).
+Traceback (most recent call l
+
+======================================================================
+⚠️  1 TEST(S) FAILED
+======================================================================
+
+📄 Detailed report saved to: notebooks/test_report.json

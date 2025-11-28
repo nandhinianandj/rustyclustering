@@ -1,0 +1,32 @@
+[package]
+name = "ghdbscan-gpu"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+ndarray.workspace = true
+rayon.workspace = true
+ordered-float.workspace = true
+ghdbscan-core = { path = "../ghdbscan-core" }
+
+# GPU dependencies
+wgpu = "0.19"
+bytemuck = { version = "1.14", features = ["derive"] }
+pollster = "0.3"
+thiserror = "1.0"
+futures-intrusive = "0.5"
+
+# Optional CUDA support
+cudarc = { version = "0.11", optional = true, features = ["cuda-12050"] }
+
+[dev-dependencies]
+approx = "0.5"
+rand = "0.8"
+tokio = { version = "1.35", features = ["full"] }
+
+[features]
+default = []
+cuda = ["cudarc"]

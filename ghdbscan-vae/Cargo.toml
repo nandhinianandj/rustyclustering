@@ -1,0 +1,29 @@
+[package]
+name = "ghdbscan-vae"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+# Candle deep learning framework (from Hugging Face)
+candle-core = "0.9"
+candle-nn = "0.9"
+
+# Core dependencies
+ndarray.workspace = true
+rayon.workspace = true
+rand = "0.8"
+serde = { version = "1.0", features = ["derive"] }
+
+# Existing clustering for comparison
+ghdbscan-core = { path = "../ghdbscan-core" }
+
+[dev-dependencies]
+approx = "0.5"
+
+[features]
+default = []
+cuda = ["candle-core/cuda"]
+metal = ["candle-core/metal"]
