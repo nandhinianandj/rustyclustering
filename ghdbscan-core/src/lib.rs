@@ -27,10 +27,20 @@ pub mod dbscan;
 pub mod hdbscan;
 pub mod mst;
 pub mod hierarchy;
+pub mod kmeans;
+pub mod knn;
+pub mod hierarchical;
+pub mod gmm;
+pub mod spectral;
 
 pub use distance::{DistanceMetric, Distance};
 pub use dbscan::{DBSCAN, DBSCANParams, ClusterResult};
 pub use hdbscan::{HDBSCAN, HDBSCANParams, HDBSCANResult};
+pub use kmeans::{KMeans, KMeansParams, KMeansResult};
+pub use knn::{KNN, KNNParams};
+pub use hierarchical::{AgglomerativeClustering, HierarchicalParams, HierarchicalResult, Linkage};
+pub use gmm::{GMM, GMMParams, GMMResult, CovarianceType};
+pub use spectral::{SpectralClustering, SpectralParams, SpectralResult};
 
 #[cfg(test)]
 mod tests;

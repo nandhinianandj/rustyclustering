@@ -12,7 +12,8 @@ rayon.workspace = true
 ordered-float.workspace = true
 kiddo = "4.2"
 thiserror = "1.0"
+rand = "0.8"
+nalgebra = "0.32"
 
 [dev-dependencies]
 approx = "0.5"
-rand = "0.8"
